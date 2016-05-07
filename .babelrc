@@ -1,11 +1,13 @@
 {
   "presets": [
-    "es2015"
+    "es2015",
+    "react"
   ],
   "env": {
     "development": {
       "presets": [
-        "power-assert"
+        "power-assert",
+        "react-hmre"
       ]
     }
   }
