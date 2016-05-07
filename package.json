@@ -1,23 +1,21 @@
 {
-  "name": "react-materialui-sample-app",
-  "version": "0.1.0",
-  "main": "gulp.babel.js",
+  "name": "react-materialui-boilerplate",
+  "version": "0.0.0",
   "scripts": {
-    "start": "NODE_ENV=development node server.js"
+    "start": "node server.js"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sapphirus/react-materialui-sample-app.git"
+    "url": "git+https://github.com/sapphirus/react-materialui-boilerplate.git"
   },
   "keywords": [
-    "react",
-    "material"
+    ""
   ],
   "bugs": {
-    "url": "https://github.com/sapphirus/react-materialui-sample-app/issues"
+    "url": "https://github.com/sapphirus/react-materialui-boilerplate/issues"
   },
-  "homepage": "https://github.com/sapphirus/react-materialui-sample-app#readme",
+  "homepage": "https://github.com/sapphirus/react-materialui-boilerplate#readme",
   "description": "Material UI と React と Redux の練習",
   "devDependencies": {
     "babel-core": "^6.8.0",
@@ -32,9 +30,6 @@
     "eslint-plugin-import": "^1.6.1",
     "eslint-plugin-jsx-a11y": "^1.0.4",
     "eslint-plugin-react": "^5.0.1",
-    "gulp": "^3.9.1",
-    "gulp-filter": "^4.0.0",
-    "gulp-plumber": "^1.1.0",
     "jsdom": "^8.5.0",
     "mocha": "^2.4.5",
     "power-assert": "^1.4.0",
