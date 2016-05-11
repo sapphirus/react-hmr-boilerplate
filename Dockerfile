@@ -1,8 +1,10 @@
 FROM node:0.12.10
 
-ENV DIR .
-WORKDIR ${DIR}
-VOLUME ${DIR}
+#ENV DIR .
+#WORKDIR ${DIR}
+#VOLUME ${DIR}
+
+#RUN export PATH=$PATH:`npm bin -g`
 
 RUN su
 RUN npm i -g gulp-cli webpack mocha eslint babel-cli
