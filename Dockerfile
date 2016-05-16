@@ -12,8 +12,10 @@ RUN npm up -g
 #RUN npm dedupe -g
 RUN exit
 
+ENV PATH $PATH:./node_modules/.bin
+
 RUN npm i
 #RUN npm dedupe
 #RUN npm ls --depth=0
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
