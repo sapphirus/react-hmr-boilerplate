@@ -2,8 +2,8 @@
   "name": "react-materialui-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "start": "node server.js",
-    "dev": "DEBUG=true node server.js",
+    "start": "node server/index.js",
+    "dev": "DEBUG=true node server/development.js",
     "test": "mocha --compilers js:babel-register",
     "lint": "eslint -c ./**/*.js"
   },
