@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "node src/server/production.js",
-    "dev"  : "DEBUG=true node -r babel-register src/server/development.js",
+    "dev"  : "DEBUG=true babel-node src/server/development.js",
     "build": "webpack",
     "test" : "mocha --compilers js:babel-register",
     "lint" : "eslint -c src/**/*.js"
