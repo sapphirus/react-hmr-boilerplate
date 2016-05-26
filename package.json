@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "start": "node src/server/production.js",
-    "dev"  : "DEBUG=true babel-node src/server/development.js",
+    "dev": "DEBUG=true babel-node src/server/development.js",
     "build": "webpack",
-    "test" : "mocha --compilers js:babel-register",
-    "lint" : "eslint -c src/**/*.js"
+    "test": "mocha --compilers js:babel-register",
+    "lint": "eslint -c src/**/*.js"
   },
   "license": "MIT",
   "repository": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "babel-polyfill": "^6.8.0",
     "body-parser": "^1.15.1",
+    "handlebars": "^4.0.5",
     "helmet": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.11.2",
