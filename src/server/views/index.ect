@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="">
 </head>
 <body>
-  <div id="app">{{{content}}}</div>
+  <h1>Test</h1>
+  <div id="app"><%- @content %></div>
+  <script id="initial-data" type="text/plain" data-json="<%- @initialData %>"></script>
   <script src="/static/bundle.js"></script>
 </body>
 </html>
