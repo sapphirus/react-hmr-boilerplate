@@ -11,16 +11,16 @@ const config = {
   debug: true,
   devtool: 'inline-source-map',
   entry: [
+    'webpack-hot-middleware/client',
     Paths.entry,
   ],
   output: {
     filename: 'bundle.js',
     historyApiFallback: true,
-    hot: true,
     path: Paths.build,
     publicPath: '/static',
   },
-  plugin: [
+  plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
@@ -28,14 +28,16 @@ const config = {
   module: {
     loaders: [
       {
-        test: /\.(js)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        include: Paths.entry,
+        loaders: ['react-hot', 'babel'],
       },
     ],
   },
   resolve: {
-    extensions: ['', '.js', '.json'],
+    modulesDirectories: ['node_modules', Paths.entry],
+    extensions: ['', '.js', '.jsx'],
   },
 };
 
