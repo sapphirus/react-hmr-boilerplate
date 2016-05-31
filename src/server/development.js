@@ -20,7 +20,7 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.use(webpackHotMiddleware(compiler));
 
-app.listen(PORT, HOST, (err) => {
+app.listen(PORT, HOST, err => {
   if (err) {
     if (err.syscall !== 'listen') {
       throw err;
@@ -32,5 +32,7 @@ app.listen(PORT, HOST, (err) => {
     } else {
       throw err;
     }
+  } else {
+    console.log(`Listening at http://${HOST}:${PORT}`);
   }
 });
