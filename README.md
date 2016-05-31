@@ -1,4 +1,4 @@
-# react-materialui-boilerplate
+# react-hmr-boilerplate
 
 ## ディレクトリ構成
   * docs
