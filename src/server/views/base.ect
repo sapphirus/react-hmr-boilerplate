@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="deprecated" lang="ja"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title><%= @app?.title %></title>
+    <link rel="stylesheet" href="/static/styles/app.css">
+    <% if @app?.style : %><link rel="stylesheet" href="/static/styles/<%= @app.style %>.css"><% end %>
+    <% content 'header' %>
+  </head>
+  <body>
+    <div id="app"><%- @content %></div>
+    <% include 'layouts/footer' %>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<% content 'footer-before' %>
+<script id="initial-data" type="text/plain" data-json="<%- @initialData %>"></script>
+<script src="/static/bundle.js"></script>
+<% if @app?.js : %><script type="text/javascript" src="/static/js/<%= @app.js %>.js"></script><% end %>
+<% content 'footer-after' %>
