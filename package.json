@@ -21,7 +21,7 @@
     "url": "https://github.com/sapphirus/react-hmr-boilerplate/issues"
   },
   "homepage": "https://github.com/sapphirus/react-hmr-boilerplate#readme",
-  "description": "Material UI と React と Redux の練習",
+  "description": "Reactの雛型",
   "dependencies": {
     "axios": "^0.11.1",
     "babel-polyfill": "^6.8.0",
