@@ -21,6 +21,17 @@ const config = {
   },
   js: {
     base: dist,
+    options: {
+      opts: {
+        destination: './docs/client',
+      },
+      templates: {
+        default: {
+          outputSourceFiles: true,
+        },
+        linenums: true,
+      },
+    },
     src: ['**/*.js', build],
   },
   lint: {

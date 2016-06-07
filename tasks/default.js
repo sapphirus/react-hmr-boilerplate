@@ -1,3 +1,3 @@
 import gulp from 'gulp';
 
-gulp.task('default', ['clean', 'webpack', 'assets']);
+gulp.task('default', ['clean', 'webpack', 'assets', 'js.map']);
