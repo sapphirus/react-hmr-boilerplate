@@ -24,9 +24,14 @@ const config = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new webpack.optimize.DedupePlugin(),
   ],
   module: {
     loaders: [
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css'],
+      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
