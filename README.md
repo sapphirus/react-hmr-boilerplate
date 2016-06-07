@@ -1,5 +1,5 @@
 # react-hmr-boilerplate
-React と HMR のたたき台。
+React と HMR の雛型。
 
 ## ディレクトリ構成
   * docs
