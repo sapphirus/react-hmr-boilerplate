@@ -19,5 +19,11 @@
   ],
   "rules": {
     "semi": 2
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "15.0"
+    }
   }
 }
